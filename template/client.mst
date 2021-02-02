@@ -1,0 +1,10 @@
+[Interface]
+PrivateKey = {{privatekey}}
+Address = {{addresses}}
+{{#dns}}DNS = {{dns}} {{/dns}}
+
+[Peer]
+PublicKey = {{server_key}}
+AllowedIPs = {{{allowedips}}}
+{{#psk}}PresharedKey = {{psk}} {{/psk}}
+Endpoint = {{server_addr}}:{{server_port}}

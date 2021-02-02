@@ -1,0 +1,8 @@
+{
+    "server_name": {
+        "server_addr": "vpn.example.com",
+        "server_port": 80,
+        "server_key": "xTIBA5rboUvnH4htodjb6e697QjLERt1NAB4mZqp8Dg=",
+        "dns": "1.1.1.1, 2606:4700:4700::1111"
+    }
+}

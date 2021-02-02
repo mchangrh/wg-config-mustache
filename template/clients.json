@@ -1,0 +1,8 @@
+{
+    "client_name": {
+        "privatekey": "yAnz5TF+lXXJte14tji3zlMNq+hd2rYUIgJBgB3fBmk=",
+        "addresses": "10.0.0.1/32, fd00::1/128",
+        "allowedips": "0.0.0.0/0, ::0/0",
+        "psk": ""
+    }
+}
