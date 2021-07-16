@@ -10,8 +10,10 @@ const template = fs.readFileSync(path.join(__dirname,"template/client.mst"), "ut
 for (let server in servers) {
   for (let client in clients) {
     let result = Mustache.render(template, {...servers[server], ...clients[client]})
-    fs.writeFile(`configs/${client}-${server}.conf`, result, function (err) {
-      if (err) return console.log(err)
-    })
+    const dir = `configs/${client}`
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir)
+    }
+    fs.writeFileSync(`configs/${client}/${server}.conf`, result)
   }
 }
