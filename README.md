@@ -1,11 +1,13 @@
 # wg-config-mustache
-generates client configuration files for wireguard with Mustache.js (like a VPN company)
+generate client configuration files for Wireguard[®](https://www.wireguard.com/) with Mustache.js (like a VPN company)
 
 ## Usage
-1. Change `template/client.mst` if you have any static options like `KeepAlive` or `MTU` - Options are in [Unofficial Documentation](https://github.com/pirate/wireguard-docs#Config-Reference)
-2. Populate `template/servers.json` with your servers - `dns` is optional.
-3. Populate `template/clients.json` with your clients - `psk` is optional.
-4. run `node create.js`
+- Populate `template/client.mst`
+  - Include any static options like `KeepAlive` or `MTU`
+  - Options are in [Unofficial Documentation](https://github.com/pirate/wireguard-docs#Config-Reference)
+- Populate `template/servers.json` with your servers - `dns` is optional.
+- Populate `template/clients.json` with your clients - `psk` is optional.
+- run `npm start`
 
 ## Rationale
 there are a lot of wireguard configuration managers out there, from webui to client-only to web-only. However, none of them allow for multiple clients connecting to multiple servers that are not behind the same endpoint (like a pseudo VPN company).

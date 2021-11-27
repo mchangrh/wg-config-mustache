@@ -1,5 +1,30 @@
 {
-	"dependencies": {
-		"mustache": "^4.2.0"
-	}
+  "dependencies": {
+    "mustache": "^4.2.0"
+  },
+  "name": "wg-config-mustache",
+  "description": "generates client configuration files for wireguard with Mustache.js (like a VPN company)",
+  "version": "1.0.0",
+  "main": "create.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node create.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchangrh/wg-config-mustache.git"
+  },
+  "keywords": [
+    "mustache",
+    "vpn",
+    "wireguard",
+    "wireguard-vpn-setup"
+  ],
+  "author": "Michael Chang <michael@mchang.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mchangrh/wg-config-mustache/issues"
+  },
+  "homepage": "https://github.com/mchangrh/wg-config-mustache#readme"
 }
