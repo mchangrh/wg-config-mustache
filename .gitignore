@@ -1,3 +1,4 @@
 node_modules/
-configs/*
+clients/*
+servers/*
 template/*.json

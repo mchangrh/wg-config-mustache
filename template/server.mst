@@ -1,0 +1,8 @@
+{{#clients}}
+# {{name}}
+[Peer]
+PublicKey = {{publickey}}
+AllowedIPs = {{{allowedips}}}
+{{#psk}}PresharedKey = {{psk}} {{/psk}}
+
+{{/clients}}
